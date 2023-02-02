@@ -1,0 +1,31 @@
+{
+  "name": "cloud-music",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "better-scroll": "^2.0.0-beta.10",
+    "immutable": "^4.2.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.0",
+    "redux": "^4.2.1",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.4.2",
+    "styled-components": "^5.3.6",
+    "swiper": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "vite": "^3.2.3"
+  }
+}
