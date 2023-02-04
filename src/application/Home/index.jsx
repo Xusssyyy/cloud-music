@@ -11,7 +11,7 @@ function Home(props) {
         <span className="iconfont search">&#xe62b;</span>
       </Top>
       <Tab>
-        <NavLink to="/recommend">
+        <NavLink to="/">
           <TabItem>
             <span>推荐</span>
           </TabItem>

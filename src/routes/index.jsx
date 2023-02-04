@@ -12,7 +12,7 @@ function MyRouter() {
     <Routes>
       <Route path="/" element={<Home />}>
         <Route path="/" element={<Recommend />} />
-        <Route path="/recommend" element={<Recommend />} />
+        {/* <Route path="/recommend" element={<Recommend />} /> */}
         <Route path="/singers" element={<Singers />} />
         <Route path="/rank" element={<Rank />} />
         <Route path="/recommend/:id" element={<Album />} />
