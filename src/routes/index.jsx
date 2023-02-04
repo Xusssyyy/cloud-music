@@ -11,12 +11,11 @@ function MyRouter() {
   return (
     <Routes>
       <Route path="/" element={<Home />}>
-        <Route path="/" element={<Recommend />}>
-          <Route path="/recommend/:id" element={<Album />}></Route>
-        </Route>
+        <Route path="/" element={<Recommend />} />
         <Route path="/recommend" element={<Recommend />} />
         <Route path="/singers" element={<Singers />} />
         <Route path="/rank" element={<Rank />} />
+        <Route path="/recommend/:id" element={<Album />} />
       </Route>
     </Routes>
   );
