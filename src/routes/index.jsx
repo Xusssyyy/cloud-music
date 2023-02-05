@@ -4,6 +4,7 @@ import Recommend from "../application/Recommend";
 import Singers from "../application/Singers";
 import Rank from "../application/Rank";
 import Album from "../application/Album";
+import Singer from "../application/Singer";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ function MyRouter() {
         <Route path="/singers" element={<Singers />} />
         <Route path="/rank" element={<Rank />} />
         <Route path="/recommend/:id" element={<Album />} />
+        <Route path="/singers/:id" element={<Singer />} />
       </Route>
     </Routes>
   );

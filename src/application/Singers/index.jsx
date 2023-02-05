@@ -17,10 +17,15 @@ import Scroll from "./../../baseUI/scroll/index";
 import { connect } from "react-redux";
 import Loading from "../../baseUI/loading";
 import singer from "./singer.png";
+import { useNavigate } from "react-router-dom";
 
 function Singers(props) {
   let [category, setCategory] = useState("");
   let [alpha, setAlpha] = useState("");
+  const navigate = useNavigate();
+  const enterDetail = (id) => {
+    navigate(`/singers/${id}`);
+  };
 
   const {
     singerList,
@@ -67,7 +72,10 @@ function Singers(props) {
       <List>
         {list.map((item, index) => {
           return (
-            <ListItem key={item.accountId + "" + index}>
+            <ListItem
+              key={item.accountId + "" + index}
+              onClick={() => enterDetail(item.id)}
+            >
               <div className="img_wrapper">
                 <LazyLoad
                   placeholder={
@@ -86,6 +94,7 @@ function Singers(props) {
             </ListItem>
           );
         })}
+        {/* <Outlet></Outlet> */}
       </List>
     );
   };
